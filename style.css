@@ -40,10 +40,13 @@ html,body{
 
 .main-visual{
     width: 100%;
-    height:720px;
-    background: #fff url(images/hero.jpg) 0 0 no-repeat;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*
     background-size:cover;
     position:relative;
+*/
 }
 
 .logo{
@@ -164,19 +167,30 @@ h3{
 #courses{
     width: 100%;
     height: 942px;
-    background: #d6e6f8;
-    
+    position: relative;
 }
 .content-area{
-    max-width: 1200px;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
+#hoge{
+    position:absolute;
+    z-index: -1;
+    background-color: #bad5f5;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
 .content-box{
-    width: 150px;
     height: 280px;
     background-color: #ffffff;
     margin: 10px 10px;
@@ -186,9 +200,10 @@ h3{
     flex-direction: column;
 }
 .course-img{
-    width:100px;
     margin: 0 auto;
-    
+    height:200px;
+    vertical-align: middle;
+    margin-top:20px;
 }
 .content-box a{
     margin: 10px auto;
@@ -196,6 +211,7 @@ h3{
     width: 170px;
     height: 40px;
     color: #ffffff;
+    
     border-radius: 10px;
     text-align: center;
     line-height: 40px;
@@ -224,4 +240,44 @@ footer{
      text-align: center;
      color: #3D5CDB;
     font-family: footer;
+}
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
