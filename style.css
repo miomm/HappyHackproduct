@@ -1,0 +1,227 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+    
+}
+
+@font-face{
+    font-family:'nav';
+    src: url(fonts/Futura-Med.ttf);
+}
+
+@font-face{
+    font-family:'title';
+    src: url(fonts/Futura-Bol.ttf);
+}
+
+@font-face{
+    font-family:'subtitle';
+    src: url(fonts/Futura-BooObl.ttf);
+    }
+@font-face{
+    font-family:'footer';
+    src: url(fonts/Futura-Boo.ttf);
+    }
+@font-face{
+    font-family:'nav';
+    src: url(fonts/Futura-Dem.ttf);
+    }
+
+#main{
+    width: 100%
+    margin: 0 auto;
+    display: block;
+     }
+
+.main-visual{
+    width: 100%;
+    height:720px;
+    background: #fff url(images/hero.jpg) 0 0 no-repeat;
+    background-size:cover;
+    position:relative;
+}
+
+.logo{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+    }
+h2{
+    display: block
+    margin:0 auto;
+    font-family: subtitle;
+    font-size: 45px;
+    position: absolute;
+   top: 75%;
+    left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+    color: #ffff; 
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+    margin-top: 10px;
+    font-family: nav;
+}
+nav a{
+    font-size: 30px;
+    display:block;
+    text-decoration: none;
+    margin: 10px 15px 0px;
+    color: #fff
+}
+nav a:hover{
+    color: #3d5dd7;
+    transition: 0.5s;
+}
+
+#intro{
+    width: 100%;
+    height: 980px;
+    background: #ffff
+    text-align: center;
+}
+
+h3{
+    color: #3d5dd7;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: title;
+}
+.wrapper{
+    width: 763px;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.right-box{
+    width: 410px;
+    height: 287px;
+    margin: 20px;
+}
+.left-box{
+    float: left;
+    width: 410px;
+    height: 287px;
+    margin-right: 200px;
+    
+}
+
+.intro-button{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    width: 170px;
+    height: 40px;
+    font-size: 15pt;
+    color: #ffffff;
+    background-color: #3D5CDB;
+    border-radius: 12px;
+    line-height: 40px;
+}
+.intro-button:hover{
+    background: #f9f9f9;
+    color: #3b5998
+}
+.intro-button02{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    width: 170px;
+    height: 40px;
+    font-size: 15pt;
+    color: #ffffff;
+    background: #ffbf00;
+    border-radius: 12px;
+    line-height: 40px;
+}
+.intro-button02:hover{
+    background: #f9f9f9;
+    color: #3b5998
+}
+
+#courses{
+    width: 100%;
+    height: 942px;
+    background: #d6e6f8;
+    
+}
+.content-area{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.content-box{
+    width: 150px;
+    height: 280px;
+    background-color: #ffffff;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.course-img{
+    width:100px;
+    margin: 0 auto;
+    
+}
+.content-box a{
+    margin: 10px auto;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+}
+.content-box h4{
+    text-align: center;
+}
+
+#images{
+    width: 100%;
+    height: 470px;
+}
+.slick{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#access{
+    width: 100%;
+    height: 640px;
+    text-align: center;
+        
+}
+footer{
+     text-align: center;
+     color: #3D5CDB;
+    font-family: footer;
+}
